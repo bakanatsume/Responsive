@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.m-f {
+  font-family: "Aclonica", sans-serif;
+  text-transform: uppercase;
+}
+
+body {
+  background-image: url(../images/back-img.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.header {
+  height: 100vh;
+  color: #ffffff;
+  line-height: 50px;
+}
+
+.header-content {
+  padding-top: 40vh;
+  text-align: center;
+}
+
+.header-content h1,
+.intro-content h1,
+.contact-section h1 {
+  font-size: 42px;
+}
+
+.header-content h2 span {
+  color: #f1c11a;
+  line-height: 100px;
+}
+
+.btn {
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  padding: 15px 35px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 15px;
+  transition: all 400ms ease-in-out;
+}
+
+.btn-fill {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn-fill:hover {
+  background-color: #f1c11a;
+  border-color: transparent;
+}
+
+.btn-trans:hover {
+  background-color: #f1c11a;
+  color: #000000;
+  border-color: transparent;
+}
+
+.intro {
+  background-color: #ffffff;
+  padding: 15vh 0;
+}
+
+.intro-content {
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro-content div {
+  width: 50%;
+}
+
+.intro-text p {
+  text-align: justify;
+  color: #828282;
+  line-height: 40px;
+}
+
+.services {
+  background-color: #f1c11a;
+  height: 50vh;
+  clip-path: polygon(
+    0 0,
+    15% 0,
+    50% 20%,
+    85% 0,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 0
+  );
+  margin-top: -15vh;
+}
+
+.service-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bucket {
+  width: 25%;
+  margin: 130px 3%;
+  color: #ffffff;
+}
+
+.bucket p {
+  color: #000000;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.contact {
+  background-color: #ffffff;
+  padding: 10vh 0;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-color: 1px solid #cccccc;
+}
+
+.contact-section div {
+  padding: 10px 3%;
+}
+
+.btn-submit {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn-submit:hover {
+  background-color: #f1c11a;
+  border-color: transparent;
+  color: #000000;
+}
+
+footer {
+  background-color: #f1c11a;
+  clip-path: polygon(
+    0 0,
+    15% 0,
+    50% 20%,
+    85% 0,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 0
+  );
+  margin-top: -10vh;
+  text-align: center;
+  padding-top: 15vh;
+  padding-bottom: 30px;
+}
+
+/* Responsive design for 1024px*/
+@media screen and (max-width: 1024px) {
+  .intro {
+    padding: 18px;
+  }
+
+  .intro-content {
+    height: 70vh;
+  }
+
+  .services {
+    height: 65vh;
+  }
+}
+
+/* Tablet View */
+
+@media screen and (max-width: 768px) {
+  .header-content h2 {
+    font-size: 20px;
+  }
+
+  .intro-content {
+    display: block;
+    height: 95vh;
+  }
+
+  .intro-content div {
+    width: 100%;
+  }
+
+  .services {
+    height: 90vh;
+    clip-path: polygon(
+      0 0,
+      15% 0,
+      50% 5%,
+      85% 0,
+      100% 0,
+      100% 100%,
+      0 100%,
+      0 0
+    );
+  }
+
+  .service-content {
+    display: block;
+    margin-top: -15vh;
+    padding-top: 1px;
+  }
+
+  .bucket {
+    width: 100%;
+    margin: 80px 3%;
+  }
+}
+
+/* Responsive for 425px mobile view */
+
+@media screen and (max-width: 425px) {
+  .header {
+    height: 100vh;
+  }
+  .header-content {
+    padding-top: 33vh;
+  }
+  .header-content h1 {
+    font-size: 29px;
+  }
+  .header-content h2 {
+    font-size: 15px;
+    line-height: 35px;
+  }
+  .header-content h2 span {
+    line-height: 0vh;
+  }
+
+  .header-content .btn {
+    padding: 10px 6px;
+  }
+
+  .intro {
+    padding: 5vh;
+    height: 85vh;
+  }
+
+  .intro-content {
+    height: 92vh;
+    margin-top: -165px;
+  }
+
+  .intro-content div {
+    width: 100%;
+  }
+
+  .intro-img {
+    margin-top: 140px;
+  }
+
+  .intro-text h1 {
+    font-size: 29px;
+    height: 15vh;
+    margin: -30px;
+    margin-top: 20px;
+  }
+
+  .intro-text p {
+    line-height: 20px;
+    margin: -25px;
+  }
+
+  .services {
+    height: 110vh;
+    clip-path: polygon(
+      0 0,
+      15% 0,
+      50% 3%,
+      85% 0,
+      100% 0,
+      100% 100%,
+      0 100%,
+      0 0
+    );
+  }
+
+  .bucket {
+    width: 100%;
+    margin: 42px 3px;
+  }
+
+  .contact-section h1 {
+    font-size: 29px;
+    margin-top: -55px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    margin-left: -15px;
+    padding: 12px;
+    border-color: 1px solid #cccccc;
+  }
+
+  .btn-submit {
+    margin-right: 0px;
+  }
+}
+
+/*Responsive for 375 px*/
+
+@media screen and (max-width: 375px) {
+  .header-content h2 {
+    font-size: 12px;
+  }
+  .services {
+    height: 120vh;
+  }
+}
+
+/*responsive deisgn for 320px*/
+
+@media screen and (max-width: 320px) {
+  .services {
+    height: 135vh;
+  }
+}
